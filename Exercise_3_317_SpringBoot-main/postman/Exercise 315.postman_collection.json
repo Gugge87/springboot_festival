@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "ff17417e-88fb-4868-9277-69ff7777dd63",
+		"name": "Exercise 315",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25472861"
+	},
+	"item": [
+		{
+			"name": "Greeting",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/greeting",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"greeting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create band",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"name\": \"Test\", \"genre\": \"Test\", \"members\": 4, \"salary\": 30000}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/festival/bands",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"festival",
+						"bands"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List bands",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/festival/bands",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"festival",
+						"bands"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
